@@ -2,16 +2,14 @@
 using namespace std;
 
 int main() {
-    int n, reversedNumber = 0, remainder;
+    int n, reversedNumber = 0;
 
     cout << "Enter an integer: ";
     cin >> n;
 
-    while(n != 0) {
-        remainder = n%10;
-        reversedNumber = reversedNumber*10 + remainder;
-        n /= 10;
-    }
+    do
+        reversedNumber = reversedNumber * 10 + (n % 10);
+    while((n /= 10) != 0);
 
     cout << "Reversed Number = " << reversedNumber;
 
