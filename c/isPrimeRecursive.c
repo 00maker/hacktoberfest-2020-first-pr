@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int isPrime(int, int);
-
+//ovo je glavna funkcija
 int main()
 {
     int num, prime;
